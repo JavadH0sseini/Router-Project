@@ -4,6 +4,7 @@ export default function ErrorPage() {
   const error = useRouteError();
   console.error(error);
 
+  window.location.href = '/';
   return (
     <div id="error-page" className="flex h-screen w-full justify-center items-center flex-col gap-2">
       <h1 className="text-center text-red-500 text-4xl">Error!</h1>
